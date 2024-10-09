@@ -1,0 +1,33 @@
+:root {
+  --color-dark: #1F1F1F;
+  --color-dark-alt: #292A32;
+  --color-light: #FFFFFF;
+  --color-accent: #2AC6FF;
+  --color-gray: #F6F7FB;
+  --color-gray-alt: #6C6C6C;
+
+  --border: 4px solid var(--color-accent);
+
+  --border-radius: 24px;
+  --border-button: 160px;
+
+  --font-family-base: 'Inter', sans-serif;
+
+  --container-width: 1240px;
+  --container-padding-x: 20px;
+
+  --section-padding-y: 80px;
+
+  --input-height: 80px;
+  --button-height: 56px;
+
+  --transition-duration: 0.4s;
+
+  @include desktop {
+    --section-padding-y: 60px;
+  }
+
+  @include mobile {
+    --section-padding-y: 32px;
+  }
+}

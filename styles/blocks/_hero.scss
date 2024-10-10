@@ -116,18 +116,21 @@
 }
 
 .video-js {
-  width: 970px;
-  height: 480px;
+  width: 845px;
+  height: 479px;
 
   @include tablet {
     width: 870px;
+    height: 493px;
   }
 
   @include mobile {
     width: 670px;
+    height: 379px;
   }
 
   @include mobile-s {
     width: 310px;
+    height: 175px;
   }
 }

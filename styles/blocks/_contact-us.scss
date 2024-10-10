@@ -12,6 +12,11 @@
     row-gap: 32px;
   }
 
+  @include mobile-s {
+    padding: 20px;
+    row-gap: 32px;
+  }
+
   &__header {
     width: 100%;
     text-align: center;

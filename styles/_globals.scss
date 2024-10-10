@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
 }
 
 h1, .h1 {
-  @include fluid-text(52, 32);
+  @include fluid-text(52, 28);
   font-weight: 500;
   letter-spacing: -3%;
 }

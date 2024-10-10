@@ -6,15 +6,18 @@
   background-color: var(--color-gray);
   border-radius: var(--border-radius);
   border: 4px solid var(--color-light);
-
+  transition-duration: var(--transition-duration);
+  
   @include hover {
     border: var(--border);
     color: var(--color-accent);
     --linkColor: var(--color-accent);
+    transition-duration: var(--transition-duration);
   }
 
   @include mobile {
-    padding-inline: 50px;
+    padding-inline: 48px;
+
   }
 
   &__header {

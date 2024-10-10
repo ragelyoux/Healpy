@@ -85,10 +85,7 @@
         <header class="section__header">
           <h2 class="section__title puddle-bg">Чем мы полезны</h2>
           <div class="section__description">
-            <p>
-              Поможем решить <br />
-              ключевые задачи
-            </p>
+            <p>Поможем решить <br />ключевые задачи</p>
           </div>
         </header>
         <div class="section__body">
@@ -196,10 +193,7 @@
         <header class="section__header">
           <h2 class="section__title puddle-bg">Для кого</h2>
           <div class="section__description">
-            <p>
-              Подойдет любой <br />
-              медицинской организации
-            </p>
+            <p>Подойдет любой <br />медицинской организации</p>
           </div>
         </header>
         <div class="section__body">
@@ -374,7 +368,11 @@
         <div class="footer__soc1als soc1als">
           <ul class="soc1als__list">
             <li class="soc1als__item">
-              <a class="soc1als__link" href="/">
+              <a
+                class="soc1als__link"
+                href="https://t.me/not_t_boring"
+                target="_blank"
+              >
                 <span class="visually-hidden">Telegram</span>
                 <svg
                   width="23"
@@ -394,6 +392,41 @@
         </div>
       </div>
     </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a
+              class="mobile-overlay__link"
+              href="#decision"
+              onclick="mobileOverlay.close()"
+              >Решение</a
+            >
+          </li>
+          <li class="mobile-overlay__item">
+            <a
+              class="mobile-overlay__link"
+              href="#audience"
+              onclick="mobileOverlay.close()"
+              >Для кого</a
+            >
+          </li>
+          <li class="mobile-overlay__item">
+            <a
+              class="mobile-overlay__link"
+              href="#faq"
+              onclick="mobileOverlay.close()"
+              >FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </dialog>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
   </body>
-  <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
 </html>

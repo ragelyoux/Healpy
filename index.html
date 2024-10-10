@@ -1,381 +1,434 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Healpy</title>
-</head>
-<body>
-<header class="header" id="header">
-    <div class="header__inner container">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__inner container">
         <a class="header__logo logo" href="#">
-            <img
-                    class="logo__image"
-                    src="./images/logo.svg"
-                    alt="Healpy"
-                    width="102" height="32" loading="lazy"
-            />
+          <img
+            class="logo__image"
+            src="./images/logo.svg"
+            alt="Healpy"
+            width="102"
+            height="32"
+            loading="lazy"
+          />
         </a>
         <nav class="header__menu hidden-mobile">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="#decision">Решение</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="#audience">Для кого</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="#faq">FAQ</a>
-                </li>
-            </ul>
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#decision">Решение</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#audience">Для кого</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
         </nav>
         <button class="header__button button hidden-mobile" type="button">
-            <a class="header__link" href="#form">связаться с нами</a>
+          <a class="header__link" href="#form">связаться с нами</a>
         </button>
         <button
-                class="header__burger-button burger-button visible-mobile"
-                type="button"
-                onclick="mobileOverlay.showModal()"
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          onclick="mobileOverlay.showModal()"
         >
-            <span class="visually-hidden">Open navigation menu</span>
+          <span class="visually-hidden">Open navigation menu</span>
         </button>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main class="content">
-    <section class="section section--hidden-x container">
+    <main class="content">
+      <section class="section section--hidden-x container">
         <div class="section__body">
-            <div class="hero">
-                <div class="hero__main">
-                    <div class="hero__body">
-                        <h1 class="hero__title">
-                            Совершенствуем работу клиники через <span
-                                class="hero__title-highlight">умное распределение</span> врачей
-                        </h1>
-                        <img
-                                class="hero__image"
-                                src="./images/player.svg"
-                                alt=""
-                                width="972" height="484" loading="lazy"
-                        />
-                        <button
-                                class="hero__button button-link"
-                                type="button"
-                        >
-                            <a class="hero__link" href="#decision">Узнать больше</a>
-                        </button>
+          <div class="hero">
+            <div class="hero__main">
+              <div class="hero__body">
+                <h1 class="hero__title">
+                  Совершенствуем работу клиники через
+                  <span class="hero__title-highlight">умное распределение</span>
+                  врачей
+                </h1>
+                <img
+                  class="hero__image"
+                  src="./images/player.svg"
+                  alt=""
+                  width="972"
+                  height="484"
+                  loading="lazy"
+                />
+                <button class="hero__button button-link" type="button">
+                  <a class="hero__link" href="#decision">Узнать больше</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container" id="decision">
+        <header class="section__header">
+          <h2 class="section__title puddle-bg">Чем мы полезны</h2>
+          <div class="section__description">
+            <p>Поможем решить <br />ключевые задачи</p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="advantage">
+            <ul class="advantage__list grid grid--3">
+              <li class="advantage__item">
+                <article class="advantage-card">
+                  <header class="advantage-card__header">
+                    <div class="advantage-card__info">
+                      <h3 class="advantage-card__name h3">Экономия Времени</h3>
                     </div>
+                    <span class="advantage-card__link">01</span>
+                  </header>
+                  <div class="advantage-card__body">
+                    <p>Подберем оптимальное время и место для работы врача</p>
+                  </div>
+                </article>
+              </li>
+              <li class="advantage__item">
+                <article class="advantage-card">
+                  <header class="advantage-card__header">
+                    <div class="advantage-card__info">
+                      <h3 class="advantage-card__name h3">Сезонная Нагрузка</h3>
+                    </div>
+                    <span class="advantage-card__link">02</span>
+                  </header>
+                  <div class="advantage-card__body">
+                    <p>Поможем с сезонным наплывом клиентов</p>
+                  </div>
+                </article>
+              </li>
+              <li class="advantage__item">
+                <article class="advantage-card">
+                  <header class="advantage-card__header">
+                    <div class="advantage-card__info">
+                      <h3 class="advantage-card__name h3">
+                        Человеческий Фактор
+                      </h3>
+                    </div>
+                    <span class="advantage-card__link">03</span>
+                  </header>
+                  <div class="advantage-card__body">
+                    <p>
+                      Укажем на ошибки в расписании и подскажем как их исправить
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="advantage__item">
+                <article class="advantage-card">
+                  <header class="advantage-card__header">
+                    <div class="advantage-card__info">
+                      <h3 class="advantage-card__name h3">
+                        Уведомление Сотрудников
+                      </h3>
+                    </div>
+                    <span class="advantage-card__link">04</span>
+                  </header>
+                  <div class="advantage-card__body">
+                    <p>Проинформируем специалиста об изменении его работы</p>
+                  </div>
+                </article>
+              </li>
+              <li class="advantage__item">
+                <article class="advantage-card">
+                  <header class="advantage-card__header">
+                    <div class="advantage-card__info">
+                      <h3 class="advantage-card__name h3">
+                        Внешняя Интеграция
+                      </h3>
+                    </div>
+                    <span class="advantage-card__link">05</span>
+                  </header>
+                  <div class="advantage-card__body">
+                    <p>
+                      Healpy легко интегрируется с внешним ПО и обменивается
+                      кадровыми и другими данными
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="advantage__item">
+                <article class="advantage-card">
+                  <header class="advantage-card__header">
+                    <div class="advantage-card__info">
+                      <h3 class="advantage-card__name h3">
+                        Автоматизация документов
+                      </h3>
+                    </div>
+                    <span class="advantage-card__link">06</span>
+                  </header>
+                  <div class="advantage-card__body">
+                    <p>
+                      Система автоматически сформирует необходимый пакет
+                      документов
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section--hidden-x container" id="audience">
+        <header class="section__header">
+          <h2 class="section__title puddle-bg">Для кого</h2>
+          <div class="section__description">
+            <p>Подойдет любой <br />медицинской организации</p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="audience">
+            <ul class="audience__list">
+              <li class="audience__item">
+                <h3 class="audience__link h3">
+                  Частные медицинские учреждения
+                </h3>
+                <div class="audience__description">
+                  <p>
+                    Внедрение CRM-системы в частную клинику помогает
+                    оптимизировать расписание врачей, увеличивая эффективность
+                    их работы. Система автоматизирует запись пациентов, улучшает
+                    клиентский сервис и снижает количество пустых окон в графике
+                  </p>
                 </div>
-            </div>
+              </li>
+              <li class="audience__item">
+                <h3 class="audience__link h3">
+                  Государственные медицинские учреждения
+                </h3>
+                <div class="audience__description">
+                  <p>
+                    CRM-система для государственных клиник позволяет
+                    автоматически распределять врачей по сменам, отделениям и
+                    филиалам. Это снижает нагрузку на персонал, сокращает
+                    очереди и улучшает качество медицинских услуг
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <section class="section container" id="decision">
-        <header class="section__header">
-            <h2 class="section__title puddle-bg">Чем мы полезны</h2>
-            <div class="section__description">
-                <p>
-                    Поможем решить <br>ключевые задачи
-                </p>
-            </div>
-        </header>
-        <div class="section__body">
-            <div class="advantage">
-                <ul class="advantage__list grid grid--3">
-                    <li class="advantage__item">
-                        <article class="advantage-card">
-                            <header class="advantage-card__header">
-                                <div class="advantage-card__info">
-                                    <h3 class="advantage-card__name h3">Экономия
-                                        Времени</h3>
-                                </div>
-                                <span class="advantage-card__link">01</span>
-                            </header>
-                            <div class="advantage-card__body">
-                                <p>Подберем оптимальное время и место для работы врача</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="advantage__item">
-                        <article class="advantage-card">
-                            <header class="advantage-card__header">
-                                <div class="advantage-card__info">
-                                    <h3 class="advantage-card__name h3">Сезонная
-                                        Нагрузка</h3>
-                                </div>
-                                <span class="advantage-card__link">02</span>
-                            </header>
-                            <div class="advantage-card__body">
-                                <p>Поможем с сезонным наплывом клиентов</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="advantage__item">
-                        <article class="advantage-card">
-                            <header class="advantage-card__header">
-                                <div class="advantage-card__info">
-                                    <h3 class="advantage-card__name h3">Человеческий
-                                        Фактор</h3>
-                                </div>
-                                <span class="advantage-card__link">03</span>
-                            </header>
-                            <div class="advantage-card__body">
-                                <p>Укажем на ошибки в расписании и подскажем как их исправить</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="advantage__item">
-                        <article class="advantage-card">
-                            <header class="advantage-card__header">
-                                <div class="advantage-card__info">
-                                    <h3 class="advantage-card__name h3">Уведомление
-                                        Сотрудников</h3>
-                                </div>
-                                <span class="advantage-card__link">04</span>
-                            </header>
-                            <div class="advantage-card__body">
-                                <p>Проинформируем специалиста об изменении его работы</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="advantage__item">
-                        <article class="advantage-card">
-                            <header class="advantage-card__header">
-                                <div class="advantage-card__info">
-                                    <h3 class="advantage-card__name h3">Внешняя
-                                        Интеграция</h3>
-                                </div>
-                                <span class="advantage-card__link">05</span>
-                            </header>
-                            <div class="advantage-card__body">
-                                <p>Healpy легко интегрируется с внешним ПО и обменивается кадровыми и другими
-                                    данными</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="advantage__item">
-                        <article class="advantage-card">
-                            <header class="advantage-card__header">
-                                <div class="advantage-card__info">
-                                    <h3 class="advantage-card__name h3">Автоматизация
-                                        документов</h3>
-                                </div>
-                                <span class="advantage-card__link">06</span>
-                            </header>
-                            <div class="advantage-card__body">
-                                <p>Система автоматически сформирует необходимый пакет документов</p>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="section section--hidden-x container" id="audience">
-        <header class="section__header">
-            <h2 class="section__title puddle-bg">Для кого</h2>
-            <div class="section__description">
-                <p>Подойдет любой <br>медицинской организации</p>
-            </div>
-        </header>
-        <div class="section__body">
-            <div class="audience">
-                <ul class="audience__list">
-                    <li class="audience__item">
-                        <h3 class="audience__link h3">Частные
-                            медицинские учреждения</h3>
-                        <div class="audience__description">
-                            <p>Внедрение CRM-системы в частную клинику помогает оптимизировать расписание врачей,
-                                увеличивая эффективность их работы. Система автоматизирует запись пациентов, улучшает
-                                клиентский сервис и снижает количество пустых окон в графике</p>
-                        </div>
-                    </li>
-                    <li class="audience__item">
-                        <h3 class="audience__link h3">Государственные
-                            медицинские учреждения</h3>
-                        <div class="audience__description">
-                            <p>CRM-система для государственных клиник позволяет автоматически распределять врачей по
-                                сменам, отделениям и филиалам. Это снижает нагрузку на персонал, сокращает очереди и
-                                улучшает качество медицинских услуг </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+      </section>
 
-    <section class="section container" id="faq">
+      <section class="section container" id="faq">
         <header class="section__header">
-            <h2 class="section__title puddle-bg">FAQ</h2>
-            <div class="section__description">
-                <p>
-                    Ответим на популярные<br/>
-                    вопросы
-                </p>
-            </div>
+          <h2 class="section__title puddle-bg">FAQ</h2>
+          <div class="section__description">
+            <p>
+              Ответим на популярные<br />
+              вопросы
+            </p>
+          </div>
         </header>
         <div class="section__body">
-            <div class="process">
-                <ol class="process__list">
-                    <li class="process__item">
-                        <details class="process__accordion">
-                            <summary class="process__accordion-header">
-                                <h3 class="process__accordion-title">Настройка</h3>
-                                <span class="process__accordion-indicator"></span>
-                            </summary>
-                            <div class="process__accordion-body">
-                                <p>Вы легко сможете добавить кабинеты, распределить врачей и настроить графики работы
-                                    всего за несколько шагов. Все инструменты для управления клиникой находятся в одном
-                                    месте, что делает процесс настройки быстрым и удобным.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li class="process__item">
-                        <details class="process__accordion">
-                            <summary class="process__accordion-header">
-                                <h3 class="process__accordion-title">Интеграция</h3>
-                                <span class="process__accordion-indicator"></span>
-                            </summary>
-                            <div class="process__accordion-body">
-                                <p>Вы легко сможете добавить кабинеты, распределить врачей и настроить графики работы
-                                    всего за несколько шагов. Все инструменты для управления клиникой находятся в одном
-                                    месте, что делает процесс настройки быстрым и удобным.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li class="process__item">
-                        <details class="process__accordion">
-                            <summary class="process__accordion-header">
-                                <h3 class="process__accordion-title">Поддержка</h3>
-                                <span class="process__accordion-indicator"></span>
-                            </summary>
-                            <div class="process__accordion-body">
-                                <p>Вы легко сможете добавить кабинеты, распределить врачей и настроить графики работы
-                                    всего за несколько шагов. Все инструменты для управления клиникой находятся в одном
-                                    месте, что делает процесс настройки быстрым и удобным.</p>
-                            </div>
-                        </details>
-                    </li>
-                </ol>
-            </div>
+          <div class="process">
+            <ol class="process__list">
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Настройка</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      Вы легко сможете добавить кабинеты, распределить врачей и
+                      настроить графики работы всего за несколько шагов. Все
+                      инструменты для управления клиникой находятся в одном
+                      месте, что делает процесс настройки быстрым и удобным.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Интеграция</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      Вы легко сможете добавить кабинеты, распределить врачей и
+                      настроить графики работы всего за несколько шагов. Все
+                      инструменты для управления клиникой находятся в одном
+                      месте, что делает процесс настройки быстрым и удобным.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Поддержка</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      Вы легко сможете добавить кабинеты, распределить врачей и
+                      настроить графики работы всего за несколько шагов. Все
+                      инструменты для управления клиникой находятся в одном
+                      месте, что делает процесс настройки быстрым и удобным.
+                    </p>
+                  </div>
+                </details>
+              </li>
+            </ol>
+          </div>
         </div>
-    </section>
-    <section class="section container">
+      </section>
+      <section class="section container">
         <div class="section__body">
-            <div class="contact-us" id="form">
-                <form class="contact-us__form">
-                    <header class="contact-us__header">
-                        <h2 class="contact-us__title">Давайте улучшим управление вашей клиники</h2>
-                        <p class="contact-us__description">
-                            Свяжитесь с нами
-                        </p>
-                    </header>
-                    <div class="contact-us__body">
-                        <div class="contact-us__field field">
-                            <label class="field__label visually-hidden" for="name">Name</label>
-                            <input
-                                    class="field__input"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Название вашей организации"
-                            />
-                        </div>
-                        <div class="contact-us__field field">
-                            <label class="field__label visually-hidden" for="email">Email*</label>
-                            <input
-                                    class="field__input"
-                                    id="email"
-                                    name="email"
-                                    placeholder="E-mail"
-                                    type="email"
-                                    required
-                            />
-                        </div>
-                        <div class="contact-us__field field">
-                            <label class="field__label visually-hidden" for="message">Message*</label>
-                            <textarea
-                                    class="field__input field__input--textarea"
-                                    id="message"
-                                    name="message"
-                                    placeholder="Сообщение"
-                                    required
-                            ></textarea>
-                        </div>
-                    </div>
-                    <button
-                            class="contact-us__button button"
-                            type="submit"
-                    >
-                        написать нам
-                    </button>
-                </form>
-            </div>
+          <div class="contact-us" id="form">
+            <form class="contact-us__form">
+              <header class="contact-us__header">
+                <h2 class="contact-us__title">
+                  Давайте улучшим управление вашей клиники
+                </h2>
+                <p class="contact-us__description">Свяжитесь с нами</p>
+              </header>
+              <div class="contact-us__body">
+                <div class="contact-us__field field">
+                  <label class="field__label visually-hidden" for="name"
+                    >Name</label
+                  >
+                  <input
+                    class="field__input"
+                    id="name"
+                    name="name"
+                    placeholder="Название вашей организации"
+                  />
+                </div>
+                <div class="contact-us__field field">
+                  <label class="field__label visually-hidden" for="email"
+                    >Email*</label
+                  >
+                  <input
+                    class="field__input"
+                    id="email"
+                    name="email"
+                    placeholder="E-mail"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div class="contact-us__field field">
+                  <label class="field__label visually-hidden" for="message"
+                    >Message*</label
+                  >
+                  <textarea
+                    class="field__input field__input--textarea"
+                    id="message"
+                    name="message"
+                    placeholder="Сообщение"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button class="contact-us__button button" type="submit">
+                написать нам
+              </button>
+            </form>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer class="footer container">
-    <div class="footer__navigation">
+    <footer class="footer container">
+      <div class="footer__navigation">
         <a class="footer__logo logo" href="#header">
-            <img
-                    class="logo__image"
-                    src="./images/logo.svg"
-                    alt="Healpy"
-                    width="102" height="32" loading="lazy"
-            />
+          <img
+            class="logo__image"
+            src="./images/logo.svg"
+            alt="Healpy"
+            width="102"
+            height="32"
+            loading="lazy"
+          />
         </a>
         <nav class="footer__menu">
-            <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#decision">Решение</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#audience">Для кого</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#faq">FAQ</a>
-                </li>
-            </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#decision">Решение</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#audience">Для кого</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
         </nav>
         <div class="footer__soc1als soc1als">
-            <ul class="soc1als__list">
-                <li class="soc1als__item">
-                    <a class="soc1als__link" href="/">
-                        <span class="visually-hidden">Telegram</span>
-                        <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.8662 0.16643C17.8583 1.41203 4.96139 6.75419 1.39787 8.21027C-0.992046 9.14291 0.406914 10.0172 0.406914 10.0172C0.406914 10.0172 2.44691 10.7166 4.19555 11.2412C5.94419 11.7659 6.87683 11.1829 6.87683 11.1829L15.0954 5.64539C18.0097 3.66371 17.3104 5.29571 16.611 5.99507C15.0954 7.51067 12.5891 9.90035 10.4908 11.8239C9.55811 12.6399 10.0244 13.3396 10.4324 13.6892C11.948 14.9715 16.0864 17.5945 16.3196 17.7695C17.5511 18.6411 19.9732 19.8961 20.3416 17.2448L21.7988 8.09363C22.2652 5.00435 22.7315 2.14811 22.7898 1.33211C22.9645 -0.64957 20.8662 0.16643 20.8662 0.16643Z"
-                                  fill="#FBFBFB"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+          <ul class="soc1als__list">
+            <li class="soc1als__item">
+              <a class="soc1als__link" href="/">
+                <span class="visually-hidden">Telegram</span>
+                <svg
+                  width="23"
+                  height="19"
+                  viewBox="0 0 23 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.8662 0.16643C17.8583 1.41203 4.96139 6.75419 1.39787 8.21027C-0.992046 9.14291 0.406914 10.0172 0.406914 10.0172C0.406914 10.0172 2.44691 10.7166 4.19555 11.2412C5.94419 11.7659 6.87683 11.1829 6.87683 11.1829L15.0954 5.64539C18.0097 3.66371 17.3104 5.29571 16.611 5.99507C15.0954 7.51067 12.5891 9.90035 10.4908 11.8239C9.55811 12.6399 10.0244 13.3396 10.4324 13.6892C11.948 14.9715 16.0864 17.5945 16.3196 17.7695C17.5511 18.6411 19.9732 19.8961 20.3416 17.2448L21.7988 8.09363C22.2652 5.00435 22.7315 2.14811 22.7898 1.33211C22.9645 -0.64957 20.8662 0.16643 20.8662 0.16643Z"
+                    fill="#FBFBFB"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-    </div>
-</footer>
-<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
-    <form class="mobile-overlay__close-button-wrapper" method="dialog">
-        <button
-                class="mobile-overlay__close-button cross-button"
-                type="submit"
-        >
-            <span class="visually-hidden">Close navigation menu</span>
+      </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
         </button>
-    </form>
-    <div class="mobile-overlay__body">
+      </form>
+      <div class="mobile-overlay__body">
         <ul class="mobile-overlay__list">
-            <li class="mobile-overlay__item">
-                <a class="mobile-overlay__link" href="#decision" onclick="mobileOverlay.close()">Решение</a>
-            </li>
-            <li class="mobile-overlay__item">
-                <a class="mobile-overlay__link" href="#audience" onclick="mobileOverlay.close()">Для кого</a>
-            </li>
-            <li class="mobile-overlay__item">
-                <a class="mobile-overlay__link" href="#faq" onclick="mobileOverlay.close()">FAQ</a>
-            </li>
+          <li class="mobile-overlay__item">
+            <a
+              class="mobile-overlay__link"
+              href="#decision"
+              onclick="mobileOverlay.close()"
+              >Решение</a
+            >
+          </li>
+          <li class="mobile-overlay__item">
+            <a
+              class="mobile-overlay__link"
+              href="#audience"
+              onclick="mobileOverlay.close()"
+              >Для кого</a
+            >
+          </li>
+          <li class="mobile-overlay__item">
+            <a
+              class="mobile-overlay__link"
+              href="#faq"
+              onclick="mobileOverlay.close()"
+              >FAQ</a
+            >
+          </li>
         </ul>
-    </div>
-</dialog>
-</body>
+      </div>
+    </dialog>
+  </body>
 </html>

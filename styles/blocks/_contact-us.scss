@@ -1,4 +1,6 @@
 .contact-us {
+  display: flex;
+  justify-content: center;
   position: relative;
   overflow-x: hidden;
   padding: 120px 100px;
@@ -44,6 +46,14 @@
     @include mobile-above {
       row-gap: 32px;
     }
+
+    @include mobile {
+      padding: 20px;
+    }
+
+    @include mobile-s {
+      padding: 0;
+    }
   }
 
   &__body {
@@ -51,8 +61,12 @@
 
     @include mobile {
       row-gap: 16px;
-      padding: 10px 30px 50px;
+      padding: 44px 0 50px;
       border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+
+    @include mobile-s {
+      padding: 40px 0 30px;
     }
   }
 }

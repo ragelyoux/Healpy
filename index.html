@@ -8,6 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
     <title>Healpy</title>
   </head>
   <body>
@@ -60,14 +61,18 @@
                   <span class="hero__title-highlight">умное распределение</span>
                   врачей
                 </h1>
-                <img
-                  class="hero__image"
-                  src="./images/player.svg"
-                  alt=""
-                  width="972"
-                  height="484"
-                  loading="lazy"
-                />
+                <div class="hero__video_container">
+                  <video
+                    id="my-video"
+                    class="video-js"
+                    controls
+                    preload="auto"
+                    poster="./images/previewVideo.png"
+                    data-setup="{}"
+                  >
+                    <source src="./images/result.mp4" type="video/mp4" />
+                  </video>
+                </div>
                 <button class="hero__button button-link" type="button">
                   <a class="hero__link" href="#decision">Узнать больше</a>
                 </button>
@@ -309,33 +314,21 @@
                     class="field__input"
                     id="name"
                     name="name"
-                    placeholder="Название вашей организации"
+                    placeholder="Укажите ваше имя"
                   />
                 </div>
                 <div class="contact-us__field field">
                   <label class="field__label visually-hidden" for="email"
-                    >Email*</label
+                    >Номер телефона</label
                   >
                   <input
                     class="field__input"
                     id="email"
-                    name="email"
-                    placeholder="E-mail"
-                    type="email"
+                    name="phone"
+                    placeholder="Номер телефона"
+                    type="phone"
                     required
                   />
-                </div>
-                <div class="contact-us__field field">
-                  <label class="field__label visually-hidden" for="message"
-                    >Message*</label
-                  >
-                  <textarea
-                    class="field__input field__input--textarea"
-                    id="message"
-                    name="message"
-                    placeholder="Сообщение"
-                    required
-                  ></textarea>
                 </div>
               </div>
               <button class="contact-us__button button" type="submit">

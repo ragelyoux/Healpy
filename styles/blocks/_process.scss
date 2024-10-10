@@ -27,6 +27,7 @@
     padding: 40px 60px;
     background-color: var(--color-gray);
     border-radius: var(--border-radius);
+    transition-duration: var(--transition-duration);
 
     @include hover {
       background-color: var(--color-accent);

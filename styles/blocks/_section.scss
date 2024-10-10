@@ -12,18 +12,15 @@
 
     @include mobile {
       flex-direction: column;
-      row-gap: 4px;
+      row-gap: 12px;
       text-align: center;
-      br {
-        display: none;
-      }
     }
 
     &:not(:last-child) {
       margin-bottom: 48px;
 
       @include mobile {
-        margin-bottom: 32px;
+        margin-bottom: 40px;
       }
     }
   }

@@ -150,6 +150,10 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.woff2") format("woff2");
@@ -680,6 +684,11 @@ h4, .h4 {
 }
 .section__description {
   max-width: 580px;
+}
+@media (max-width: 767px) {
+  .section__description br {
+    display: none;
+  }
 }
 
 .hero {

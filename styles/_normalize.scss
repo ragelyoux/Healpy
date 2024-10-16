@@ -148,3 +148,7 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+
+details > summary::-webkit-details-marker {
+  display: none;
+}

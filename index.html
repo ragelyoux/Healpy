@@ -67,7 +67,6 @@
                     class="video-js"
                     controls
                     preload="auto"
-                    poster="./images/previewVideo.png"
                     data-setup="{}"
                   >
                     <source src="./images/result.mp4" type="video/mp4" />
@@ -295,10 +294,10 @@
           </div>
         </div>
       </section>
-      <section class="section container">
+      <section class="section container" id="contacts">
         <div class="section__body">
           <div class="contact-us" id="form">
-            <form class="contact-us__form">
+            <form class="contact-us__form" action="/submit">
               <header class="contact-us__header">
                 <h2 class="contact-us__title">
                   Давайте улучшим управление вашей клиники
@@ -422,6 +421,14 @@
               href="#faq"
               onclick="mobileOverlay.close()"
               >FAQ</a
+            >
+          </li>
+          <li class="mobile-overlay__item">
+            <a
+              class="mobile-overlay__link"
+              href="#contacts"
+              onclick="mobileOverlay.close()"
+              >Контакты</a
             >
           </li>
         </ul>

@@ -27,5 +27,11 @@
 
   &__description {
     max-width: 580px;
+
+    @include mobile {
+      br {
+        display: none;
+      }
+    }
   }
 }
